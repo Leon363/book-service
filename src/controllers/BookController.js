@@ -40,7 +40,7 @@ export const updateBook = async (req, res)  => {
     }
 };
 
-export const getBookByAuthor = async (req, res)  => {
+export const getBooksByAuthor = async (req, res)  => {
     try {
         const authorName = req.query.name;
         const result = await bookService.getBookByIsbnService(authorName);
